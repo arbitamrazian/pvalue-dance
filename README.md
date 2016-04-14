@@ -1,7 +1,7 @@
 # pvalue-dance
 High P-values keeping you down? Resample
 
-In keeping with the theme of "How To Lie With Statistics" by Darrell Huff, this repo will investigate the fragile properties of P-values and how they can deceive.
+In keeping with the theme of "How To Lie With Statistics" by Darrell Huff, this repo will investigate the fragile properties of P-values and how they can be used to deceive an audience.
 
 ## Setup
 Suppose a biology student is administering a drug to a group of 100 cells and wants to show that the drug had an effect on the cells size.  We will model the mean and variance adjusted size of the cell as normal distribution S ~ N(0,1).  The student has two groups that he/she will monitor during the test.  
