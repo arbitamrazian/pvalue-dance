@@ -7,6 +7,7 @@ In keeping with the theme of "How To Lie With Statistics" by Darrell Huff, this 
 Suppose a biology student is administering a drug to a group of 100 cells and wants to show that the drug had an effect on the cells size.  We will model the mean and variance adjusted size of the cell as normal distribution S ~ N(0,1).  The student has two groups that he/she will monitor during the test.  
   1. The "control" group:  The control group will not receive the drug.  We expect the control groups cell size to be distributed normally with mean 0 and variance of 1 after the experiment.  
   2. The "experimental" group:  This group will receive the drug.  The student hopes that the drug has a measureable effect on this group of cells
+
 The student administered the drug to the experimental group and measured the size of the cells and took the average.  To test the “significance” of the results he performed a two sided t-test (Ho: mu=0 H1: mu =/= 0) and found a p-value of 0.63.  Given a significance rate of alpha=0.05, he concluded that his results are not significant.  Maybe there was a mistake.  The student repeats the experiment.   He again gets p-value larger than 0.05.  After repeating the experiment 24 times he finally gets a p-value of 0.03.   The student runs to his advisor, publishes a paper  and wins the Nobel prize!
 
 ## What’s going on?
