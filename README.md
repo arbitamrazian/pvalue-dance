@@ -13,6 +13,6 @@ The student administers the drug to the experimental group and measured the size
 ## What’s going on?
 Ok maybe the story above is a little too extreme.  If ethics are not enough, repeat experimentation by other scientists will eventually disprove the work.  But what is the math that governs this behavior. Here is the intuition:  The t-test  with a significance of 95% means that, if the null hypothesis is true, 95% of the samples the student takes will not be significant.  The number of times the student must retry his/her experiment is governed by a geometric distribution with parameter p=0.05.  The mean of this distribution is 20 and does not depend on the sample size.  So on average the student must retry his/her experiment 20 times before getting a significant result.  In fact, the p-values of the test are distributed uniformly U[0,1].  So each time the student retries his/her expiriment they draw p-values from a uniform distribution.
 
-![Image of t-values](http://imgur.com/ALQSlR9)
+![Image of t-values](http://imgur.com/ALQSlR9.png)
 
-![Image of p-values](http://imgur.com/OU7nh8O)
+![Image of p-values](http://imgur.com/OU7nh8O.png)
