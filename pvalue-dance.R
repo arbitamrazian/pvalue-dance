@@ -14,7 +14,7 @@ for (i in seq(1,nmonte)){
 
 
 for (i in seq(1,nmonte)){
-  # add 0.5 to cell size for significance
+  # add 0.2 to cell size for significance
   E = rnorm(n)+0.2
   C = rnorm(n)
   test = t.test(E-C)
