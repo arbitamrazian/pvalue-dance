@@ -7,7 +7,7 @@ pvals_alt = rep(0,nmonte)
 for (i in seq(1,nmonte)){
   E = rnorm(n)
   C = rnorm(n)
-  test = t.test(E-C)
+  test = t.test(E,C)
   tvals_null[i] = test$statistic
   pvals_null[i] = test$p.value
 }
@@ -17,7 +17,7 @@ for (i in seq(1,nmonte)){
   # add 0.2 to cell size for significance
   E = rnorm(n)+0.2
   C = rnorm(n)
-  test = t.test(E-C)
+  test = t.test(E,C)
   tvals_alt[i] = test$statistic
   pvals_alt[i] = test$p.value
 }
