@@ -24,6 +24,7 @@ for (i in seq(1,nmonte)){
 
 #plot t's
 x = seq(-5,5,0.1)
+y = seq(0,1,0.1)
 par(mfrow=c(2,1))
 
 hist(tvals_null,freq=FALSE,100,xlim=c(-5,8),
@@ -38,6 +39,23 @@ legend("topright",legend=c("samples","null hypo"),
        pt.bg = c("white", NA),
        pt.cex = 2)
 
+hist(pvals_null,freq=FALSE,100,xlim=c(0,1),
+     main="p-values under null hypothesis",
+     xlab="p-values")
+lines(y,rep(1,length(y)),col="blue")
+legend("topright",legend=c("samples","null hypo"),
+       col=c("black","blue"), 
+       lty=c(0,1), 
+       lwd = c(1,1),
+       pch = c(0, NA),
+       pt.bg = c("white", NA),
+       pt.cex = 2)
+
+
+#plot p's
+
+par(mfrow=c(2,1))
+
 hist(tvals_alt,freq=FALSE,100,xlim=c(-5,8),
      main="t-values under alternative hypothesis",
      xlab="t-values")
@@ -50,25 +68,10 @@ legend("topright",legend=c("samples","null hypo"),
        pt.bg = c("white", NA),
        pt.cex = 2)
 
-#plot p's
-x = seq(0,1,0.1)
-par(mfrow=c(2,1))
-
-hist(pvals_null,freq=FALSE,100,xlim=c(0,1),
-     main="p-values under null hypothesis",
-     xlab="p-values")
-lines(x,rep(1,length(x)),col="blue")
-legend("topright",legend=c("samples","null hypo"),
-       col=c("black","blue"), 
-       lty=c(0,1), 
-       lwd = c(1,1),
-       pch = c(0, NA),
-       pt.bg = c("white", NA),
-       pt.cex = 2)
 hist(pvals_alt,freq=FALSE,100,xlim=c(0,1),
      main="p-values under alternative hypothesis",
      xlab="p-values")
-lines(x,rep(1,length(x)),col="blue")
+lines(y,rep(1,length(y)),col="blue")
 legend("topright",legend=c("samples","null hypo"),
        col=c("black","blue"), 
        lty=c(0,1), 
